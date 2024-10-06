@@ -1,9 +1,11 @@
 import { catStyle } from './functions.mjs';
+import { clearBtnColor } from './clear.mjs';
 
 const catFactsBtn = document.getElementById('catFactsBtn');
 const catFacts = document.getElementById('catFacts');
 
 catStyle();
+clearBtnColor();
 
 catFactsBtn.addEventListener("click", newFacts);
 

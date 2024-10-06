@@ -6,5 +6,6 @@ export function catStyle() {
 
         catFactsBtn.style.color = 'white';
         catFactsBtn.style.backgroundColor = '#83a2c5';
+        
     })
 };
