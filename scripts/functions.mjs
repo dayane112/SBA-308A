@@ -5,6 +5,6 @@ export function catStyle() {
     catFactsBtn.addEventListener('click', function() {
 
         catFactsBtn.style.color = 'white';
-        catFactsBtn.style.backgroundColor = '#80b693';
+        catFactsBtn.style.backgroundColor = '#83a2c5';
     })
-}
+};
