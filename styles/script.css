@@ -1,19 +1,77 @@
-.allCards{
-    
+body{
+    background-color: #f6fcfd;
+}
+
+.navBar {
+  border: .1px none;
+  border-radius: 10px;
+  height: 30px;
+  width: 650px;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 2% 6% .6% 0%;
+  background-color: #a2c1df;
+  color: #ffffff;
+}
+
+.navText {   
+  color: #ffffffea;
+  text-decoration: none;
+}
+
+h2{
+  margin-bottom: 0px;
+}
+
+h3{
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+#textAlign{
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+#align{
+
 }
 
 .card {
-    margin: 2%;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+    text-align: center;
     padding: 30px 10px 10px 10px;
-    /* box-shadow: 0 4px 8px 0 #00000033; */
+    box-shadow: 0 4px 8px 0 #0102279f;
     transition: 0.3s;
     border-radius: 5px;
-    width: 25vh;
+    width: 50vh;
   }
   
   .card:hover {
-    box-shadow: 0 16px 32px 0 #f4ccccea;
+    box-shadow: 0 16px 32px 0 #83a2c5;
   }
+
+ #catFactsBtn{
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #b2bcc6;
+    padding: 5px 5px;
+  }
+
+#catFacts{
+    display: flex;
+    align-items: center; 
+  }
+
 
   img {
     border-radius: 5px;

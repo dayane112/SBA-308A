@@ -8,9 +8,17 @@
     <script type="module" defer src="./scripts/index.mjs"></script>
     <script type="module" defer src="./scripts/functions.mjs"></script>
     <script type="module" defer src="./scripts/clear.mjs"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+        </style>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+        <!-- ________________header__________________ -->
+         
+
+
         <!-- ____________________navBar_____________________ -->
         <nav class="navBar">
             <a href="" class="navText">Home</a>
@@ -23,30 +31,23 @@
         <br>
 
         <!-- _______________welcome______________ -->
-         <div id="">
+         <div id="textAlign">
             <h1>Welcome to Animal Sanctuary</h1>
-
             <h2>Adopt don't shop</h2> 
-
             <h3>Take a look to find your new furbaby!</h3>
         </div>
 
         <!-- ____________________cat facts btn_____________________ -->
-        <!-- <Input type="text" id="dogSearch" placeholder="Search for dog breed" style="width: 300px;"></Input>
-        <button onclick="searchBtn()">Search</button> -->
-        <!-- <datalist id="breeds"></datalist> -->
-
-        <div >
+        <div id="align">
             <button id="catFactsBtn"> Click for awesome Cat facts</button>
             <p class="card" id="catFacts"></p>
         </div>
 
-        <!-- ____________card__________________ -->
-        <!-- <div class="card"></div>
-            <img src="" alt="dog sprite" width="200px" id="catFacts" style="display: none">
-        </div> -->
 
-      
+
+      <!-- ___________________Cat API__________________ -->
+        <img id="random" onclick="getRandom()" src="" alt="Changing animal pic">
+
 
 
 

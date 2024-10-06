@@ -4,6 +4,7 @@ import { clearBtnColor } from './clear.mjs';
 const catFactsBtn = document.getElementById('catFactsBtn');
 const catFacts = document.getElementById('catFacts');
 
+
 catStyle();
 clearBtnColor();
 
@@ -22,9 +23,40 @@ async function newFacts() {
 newFacts();
 
 
+const API_KEY =
+"live_3tm6wGYgWRibyHMgEMod66VwmSA89WGslpWnjuCMLVR2XqCl2D7mZhbwnT6nd7Zq";
+
+const random = document.getElementById('random');
+random.addEventListener("click", getRandom);
+
+async function getRandom() {
+
+    const res = await fetch(`https://api.thecatapi.com/v1/images/search?${API_KEY}`);
+    const cats = await res.json();
+
+    const url = cats[0].url;
+    random.src = url;
+}
+
+getRandom();
 
 
 
 
 
 
+
+
+
+
+
+
+    // Object.keys(breedTypes).forEach((breedType) => {
+    //     console.log(breedType);
+    //   let options = document.createElement("option");
+    //   options.value = breedType.id;
+    
+    //   options.textContent = breedType.name;
+    //   dogSearch.appendChild(options).value.toLowerCase();
+    // })
+    // console.log(dogSearch);
