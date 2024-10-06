@@ -1,0 +1,21 @@
+.allCards{
+    
+}
+
+.card {
+    margin: 2%;
+    padding: 30px 10px 10px 10px;
+    /* box-shadow: 0 4px 8px 0 #00000033; */
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 25vh;
+  }
+  
+  .card:hover {
+    box-shadow: 0 16px 32px 0 #f4ccccea;
+  }
+
+  img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
