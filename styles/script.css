@@ -27,6 +27,32 @@ p{
   text-decoration: none;
 }
 
+.textAlign{
+  text-align: center;
+  text-shadow: 
+        1px -1px 0px #070763,
+        -1px -1px 0px #070763;
+  font-size: 35px;
+}
+
+#header{
+  outline-color: #05053b;
+  color: #59598d;
+  font-family: "Berkshire Swash", serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 1000;
+  position: absolute;
+  margin: 0% 10%;
+
+}
+
+#imgHeader{
+  width: 100%;
+  position: relative;
+
+}
+
 h2 {
   margin-bottom: 0px;
 }
@@ -52,6 +78,10 @@ h3 {
   border-radius: 10px;
 }
 
+#subscribe{
+  color: #05053b;
+}
+
 #contactUs{
   display: flex;
   align-items: right;
@@ -68,7 +98,7 @@ h3 {
   justify-content: space-around;
   margin: auto;
   text-align: center;
-  padding: 15px 15px 15px 15px;
+  padding: 25px 25px 25px 25px;
   box-shadow: 0 4px 8px 0 #0102279f;
   transition: 0.3s;
   border-radius: 5px;
