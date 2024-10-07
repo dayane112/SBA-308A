@@ -1,5 +1,6 @@
-body{
-    background-color: #f6fcfd;
+body {
+  background-color: #f6fcfd;
+
 }
 
 .navBar {
@@ -15,65 +16,98 @@ body{
   color: #ffffff;
 }
 
-.navText {   
+.navText {
   color: #ffffffea;
   text-decoration: none;
 }
 
-h2{
+h2 {
   margin-bottom: 0px;
 }
 
-h3{
+h3 {
   margin-top: 0px;
   margin-bottom: 50px;
 }
 
-#textAlign{
+#textAlign {
   text-align: center;
   font-family: "Quicksand", sans-serif;
   font-weight: 300;
   font-style: normal;
 }
 
-#align{
 
-}
 
 .card {
   display: flex;
   justify-content: space-around;
   margin: auto;
-    text-align: center;
-    padding: 30px 10px 10px 10px;
-    box-shadow: 0 4px 8px 0 #0102279f;
-    transition: 0.3s;
-    border-radius: 5px;
-    width: 50vh;
-  }
-  
-  .card:hover {
-    box-shadow: 0 16px 32px 0 #83a2c5;
-  }
+  text-align: center;
+  padding: 30px 10px 10px 10px;
+  box-shadow: 0 4px 8px 0 #0102279f;
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 50vh;
+}
 
- #catFactsBtn{
+.card:hover {
+  box-shadow: 0 16px 32px 0 #83a2c5;
+}
+
+#catFactsBtn {
   display: flex;
   justify-content: space-around;
   margin: auto;
   margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: #b2bcc6;
-    padding: 5px 5px;
-  }
+  border-radius: 5px;
+  border: none;
+  background-color: #b2bcc6;
+  padding: 5px 5px;
+}
 
-#catFacts{
-    display: flex;
-    align-items: center; 
-  }
+#catFacts {
+  display: flex;
+  align-items: center;
+}
+
+.margins {
+  margin: 0% 15%;
+}
 
 
-  img {
-    border-radius: 5px;
-    margin-bottom: 10px;
-  }
+img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#random {
+  display: flex;
+  align-items: right;
+  height: 35vh;
+  padding: 0px 0px 0px 0px;
+}
+
+
+#random:hover {
+  transition: transform 5s;
+  transform-origin: center;
+  transform: scale(1.5);
+}
+
+#dogRandom {
+  display: flex;
+  align-items: left;
+  height: 40vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  transition: all 3s ease-in;
+  position: relative;
+  padding-top: 10%;
+}
+
+
+#dogRandom:hover {
+  transform: translatex(500px);
+}

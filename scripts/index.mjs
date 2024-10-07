@@ -42,7 +42,22 @@ getRandom();
 
 
 
+const dogAPI_KEY = "live_Deylhs5WaFb8i4FuZMtyhvaC14U3aClvwyIp5NgLLc1cnv7r7gYRUoZdlRPDKllJ";
 
+
+const dogRandom = document.getElementById('dogRandom');
+dogRandom.addEventListener("click", getRandomDog);
+
+async function getRandomDog() {
+
+    const responds = await fetch(`https://api.thedogapi.com/v1/images/search?${dogAPI_KEY}`);
+    const dogs = await responds.json();
+
+    const url = dogs[0].url;
+    dogRandom.src = url;
+}
+
+getRandomDog();
 
 
 
