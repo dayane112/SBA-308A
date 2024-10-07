@@ -3,6 +3,12 @@ body {
 
 }
 
+p{
+  font-family: "Thasadith", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .navBar {
   border: .1px none;
   border-radius: 10px;
@@ -37,14 +43,32 @@ h3 {
   font-style: normal;
 }
 
+#bottom{
+  display: flex;
+  margin: auto;
+  padding: 2% 5%;
+  background-color: #a2c1df;
+  margin: 0% 15%;
+  border-radius: 10px;
+}
 
+#contactUs{
+  display: flex;
+  align-items: right;
+  text-align: right;
+  margin-left: 25%;
+  padding-right: 5px;
+  color: #05053b;
 
+}
+
+/* __________________________________________ */
 .card {
   display: flex;
   justify-content: space-around;
   margin: auto;
   text-align: center;
-  padding: 30px 10px 10px 10px;
+  padding: 15px 15px 15px 15px;
   box-shadow: 0 4px 8px 0 #0102279f;
   transition: 0.3s;
   border-radius: 5px;
@@ -86,12 +110,13 @@ img {
   align-items: right;
   height: 35vh;
   padding: 0px 0px 0px 0px;
+  margin-top: 25px;
 }
 
 
 #random:hover {
   transition: transform 5s;
-  transform-origin: center;
+  transform-origin: top center;
   transform: scale(1.5);
 }
 
@@ -105,9 +130,11 @@ img {
   transition: all 3s ease-in;
   position: relative;
   padding-top: 10%;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 
 #dogRandom:hover {
-  transform: translatex(500px);
+  transform: translatex(300px);
 }
