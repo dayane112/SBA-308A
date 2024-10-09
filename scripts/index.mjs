@@ -12,12 +12,16 @@ catFactsBtn.addEventListener("click", newFacts);
 
 async function newFacts() {
 
-    const res = await fetch(`https://meowfacts.herokuapp.com/`);
+    try {
+        const res = await fetch(`https://meowfacts.herokuapp.com/`);
 
-    const catData = await res.json();
-    const catFact = catData.data[0];
+        const catData = await res.json();
+        const catFact = catData.data[0];
 
-    catFacts.textContent = catFact;
+        catFacts.textContent = catFact;
+    } catch (err) {
+        console.error(err)
+    }
 }
 
 newFacts();
@@ -31,11 +35,15 @@ random.addEventListener("click", getRandom);
 
 async function getRandom() {
 
-    const res = await fetch(`https://api.thecatapi.com/v1/images/search?${API_KEY}`);
-    const cats = await res.json();
+    try {
+        const res = await fetch(`https://api.thecatapi.com/v1/images/search?${API_KEY}`);
+        const cats = await res.json();
 
-    const url = cats[0].url;
-    random.src = url;
+        const url = cats[0].url;
+        random.src = url;
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 getRandom();
@@ -50,20 +58,18 @@ dogRandom.addEventListener("click", getRandomDog);
 
 async function getRandomDog() {
 
-    const responds = await fetch(`https://api.thedogapi.com/v1/images/search?${dogAPI_KEY}`);
-    const dogs = await responds.json();
+    try {
+        const responds = await fetch(`https://api.thedogapi.com/v1/images/search?${dogAPI_KEY}`);
+        const dogs = await responds.json();
 
-    const url = dogs[0].url;
-    dogRandom.src = url;
+        const url = dogs[0].url;
+        dogRandom.src = url;
+    } catch (err) {
+        console.log(err)
+    }
 }
 
 getRandomDog();
-
-
-
-
-
-
 
 
     // Object.keys(breedTypes).forEach((breedType) => {
@@ -75,3 +81,12 @@ getRandomDog();
     //   dogSearch.appendChild(options).value.toLowerCase();
     // })
     // console.log(dogSearch);
+
+
+
+let buttonColor = document.getElementById('buttonColor');
+buttonColor.addEventListener('click', function(e) {
+    e.preventDefault();
+    buttonColor.style.color = 'white';
+    buttonColor.style.backgroundColor = '#83a2c5';
+});
